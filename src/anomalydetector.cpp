@@ -2,6 +2,7 @@
 #include <sstream> // Untuk format pesan
 #include <iostream> // Untuk debug
 
+
 AnomalyDetector::AnomalyDetector() {}
 
 std::vector<std::string> AnomalyDetector::checkAnomaly(const SensorData& data) {
