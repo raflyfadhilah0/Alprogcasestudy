@@ -1,0 +1,72 @@
+[
+    {
+        "humidity": 41.984819299820785,
+        "light": 488.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.790806092142542,
+        "timestamp": "2025-06-04T11:28:01.837Z"
+    },
+    {
+        "humidity": 43.144625193517705,
+        "light": 587.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 24.07744274705337,
+        "timestamp": "2025-06-04T11:28:06.906Z"
+    },
+    {
+        "humidity": 40.79158657871762,
+        "light": 583.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.255400841515204,
+        "timestamp": "2025-06-04T11:28:11.915Z"
+    },
+    {
+        "humidity": 52.99495402864258,
+        "light": 661.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 33.337154741508925,
+        "timestamp": "2025-06-04T11:28:16.926Z"
+    },
+    {
+        "humidity": 46.13467001002119,
+        "light": 681.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 23.769884283940563,
+        "timestamp": "2025-06-04T11:28:21.947Z"
+    },
+    {
+        "humidity": 51.2768059598656,
+        "light": 362.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.580131285672064,
+        "timestamp": "2025-06-04T11:28:26.962Z"
+    },
+    {
+        "humidity": 49.33620628382595,
+        "light": 401.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.396609128433894,
+        "timestamp": "2025-06-04T11:28:31.965Z"
+    },
+    {
+        "humidity": 46.28477149700339,
+        "light": 672.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.661313674139155,
+        "timestamp": "2025-06-04T11:28:36.976Z"
+    },
+    {
+        "humidity": 51.597903513847015,
+        "light": 686.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 24.748983488875904,
+        "timestamp": "2025-06-04T11:28:41.983Z"
+    },
+    {
+        "humidity": 45.651873015335305,
+        "light": 515.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 24.77812868495721,
+        "timestamp": "2025-06-04T11:28:46.994Z"
+    }
+]

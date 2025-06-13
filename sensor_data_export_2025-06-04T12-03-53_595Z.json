@@ -1,0 +1,100 @@
+[
+    {
+        "humidity": 48.72878299528359,
+        "light": 599.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.692300142292694,
+        "timestamp": "2025-06-04T11:59:09.379Z"
+    },
+    {
+        "humidity": 50.54203317166766,
+        "light": 516.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 24.783200253008463,
+        "timestamp": "2025-06-04T11:59:14.387Z"
+    },
+    {
+        "humidity": 51.140641759379754,
+        "light": 663.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 25.44910720159299,
+        "timestamp": "2025-06-04T11:59:19.391Z"
+    },
+    {
+        "humidity": 45.550002188721365,
+        "light": 525.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.982742935131512,
+        "timestamp": "2025-06-04T11:59:24.402Z"
+    },
+    {
+        "humidity": 47.58122991542761,
+        "light": 670.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.88354231681762,
+        "timestamp": "2025-06-04T11:59:29.410Z"
+    },
+    {
+        "humidity": 52.35396028077728,
+        "light": 375.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.716155104756684,
+        "timestamp": "2025-06-04T11:59:34.417Z"
+    },
+    {
+        "humidity": 46.61414517758029,
+        "light": 586.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.38751636093477,
+        "timestamp": "2025-06-04T11:59:39.422Z"
+    },
+    {
+        "humidity": 51.84980417701159,
+        "light": 537.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 24.0891010584026,
+        "timestamp": "2025-06-04T11:59:44.428Z"
+    },
+    {
+        "humidity": 49.2800491137872,
+        "light": 397.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 24.757142806383328,
+        "timestamp": "2025-06-04T11:59:49.436Z"
+    },
+    {
+        "humidity": 44.54435177436293,
+        "light": 447.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 23.789898275545553,
+        "timestamp": "2025-06-04T11:59:54.442Z"
+    },
+    {
+        "humidity": 53.10639777628101,
+        "light": 626.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 24.131531950289645,
+        "timestamp": "2025-06-04T11:59:59.450Z"
+    },
+    {
+        "humidity": 52.68636738159447,
+        "light": 671.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 23.542045315970157,
+        "timestamp": "2025-06-04T12:00:04.460Z"
+    },
+    {
+        "humidity": 50.22093056466215,
+        "light": 716.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.787212342091998,
+        "timestamp": "2025-06-04T12:00:09.463Z"
+    },
+    {
+        "humidity": 58.8532958821407,
+        "light": 433.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 21.625470066817016,
+        "timestamp": "2025-06-04T12:00:14.465Z"
+    }
+]

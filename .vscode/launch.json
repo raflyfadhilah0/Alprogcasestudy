@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch Server",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/server", // Sesuaikan jika output path berbeda
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false, // true jika ingin konsol terpisah
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "CMake: build" // Menjalankan build sebelum launch
+        },
+        {
+            "name": "(gdb) Launch Client",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/client", // Sesuaikan
+            "args": ["MyCppClient-01"], // Contoh argumen untuk ID client
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "CMake: build"
+        }
+    ]
+}
