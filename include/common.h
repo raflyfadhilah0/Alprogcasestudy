@@ -50,6 +50,7 @@ inline std::string getCurrentTimestamp() {
     auto itt = std::chrono::system_clock::to_time_t(now);
     std::ostringstream ss;
     ss << std::put_time(std::localtime(&itt), "%Y-%m-%dT%H:%M:%S");
+
     auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(now.time_since_epoch()) % 1000;
     ss << '.' << std::setfill('0') << std::setw(3) << ms.count() << "Z";
     return ss.str();

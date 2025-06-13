@@ -18,6 +18,7 @@ public:
     std::vector<AnomalyResult> searchHistoricalAnomalies(const std::vector<SensorData>& all_data,
                                                          const std::string& start_time = "",
                                                          const std::string& end_time = "");
+
 };
 
 #endif // ANOMALY_DETECTOR_H

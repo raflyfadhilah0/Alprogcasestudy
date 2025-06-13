@@ -14,8 +14,6 @@ std::vector<std::string> AnomalyDetector::checkAnomaly(const SensorData& data) {
     if (dot_pos != std::string::npos) {
         display_timestamp = display_timestamp.substr(0, dot_pos);
     }
-
-
     if (data.temperature < global_thresholds.temp_min || data.temperature > global_thresholds.temp_max) {
         ss.str(""); // Clear stringstream
         ss << "Peringatan (" << display_timestamp << "): Suhu (" << std::fixed << std::setprecision(2) << data.temperature
@@ -35,6 +33,7 @@ std::vector<std::string> AnomalyDetector::checkAnomaly(const SensorData& data) {
         anomalies.push_back(ss.str());
     }
     return anomalies;
+
 }
 
 std::vector<AnomalyResult> AnomalyDetector::searchHistoricalAnomalies(
@@ -53,6 +52,7 @@ std::vector<AnomalyResult> AnomalyDetector::searchHistoricalAnomalies(
         }
 
         std::vector<std::string> anomalies_detected = checkAnomaly(record);
+
         if (!anomalies_detected.empty()) {
             AnomalyResult ar;
             ar.data = record;
@@ -61,7 +61,6 @@ std::vector<AnomalyResult> AnomalyDetector::searchHistoricalAnomalies(
             found_anomalies.push_back(ar);
         }
     }
-    // Pengurutan bisa ditambahkan di sini jika perlu
-    // std::sort(found_anomalies.begin(), found_anomalies.end(), ...);
+
     return found_anomalies;
 }

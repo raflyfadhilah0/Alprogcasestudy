@@ -1,0 +1,44 @@
+[
+    {
+        "humidity": 50.76098480422897,
+        "light": 489.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 24.659277584483707,
+        "timestamp": "2025-05-26T14:09:54.953Z"
+    },
+    {
+        "humidity": 47.99646346099198,
+        "light": 520.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 24.143766693085198,
+        "timestamp": "2025-05-26T14:09:59.956Z"
+    },
+    {
+        "humidity": 53.62769755655741,
+        "light": 712.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 22.394501365941593,
+        "timestamp": "2025-05-26T14:10:04.969Z"
+    },
+    {
+        "humidity": 46.61638299305696,
+        "light": 480.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 23.189617719465268,
+        "timestamp": "2025-05-26T14:10:09.979Z"
+    },
+    {
+        "humidity": 56.98954069642037,
+        "light": 513.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 29.577667641131534,
+        "timestamp": "2025-05-26T14:10:14.984Z"
+    },
+    {
+        "humidity": 55.41806836241795,
+        "light": 615.0,
+        "sensor_id": "CppClient-01",
+        "temperature": 18.26744304776263,
+        "timestamp": "2025-05-26T14:10:19.998Z"
+    }
+]

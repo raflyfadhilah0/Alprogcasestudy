@@ -1,4 +1,6 @@
+
 #include "common.h" // Untuk konfigurasi, getCurrentTimestamp, dan SensorData
+
 #include "nlohmann/json.hpp"
 
 #include <iostream>
@@ -77,13 +79,13 @@ std::mt19937 rng_client(std::chrono::steady_clock::now().time_since_epoch().coun
 double random_double_client(double min_val, double max_val) {
     std::uniform_real_distribution<double> dist(min_val, max_val);
     return dist(rng_client);
+
 }
 
 SensorData generate_sensor_data(const std::string& client_id_str) {
     SensorData data;
     data.timestamp = getCurrentTimestamp();
     data.sensor_id = client_id_str;
-
     data.temperature = random_double_client(22.0, 25.0) + random_double_client(-1.0, 1.0);
     data.humidity = random_double_client(45.0, 55.0) + random_double_client(-5.0, 5.0);
     // Pastikan tipe data light konsisten double sesuai common.h
@@ -97,10 +99,10 @@ SensorData generate_sensor_data(const std::string& client_id_str) {
     if (random_double_client(0.0, 1.0) < 0.05) {
         data.humidity = (random_double_client(0.0, 1.0) < 0.5) ? random_double_client(70.0, 90.0) : random_double_client(20.0, 30.0);
         // std::cout << "[" << client_id_str << "] Mensimulasikan anomali kelembapan!" << std::endl; // Bisa di-uncomment jika perlu
+
     }
     return data;
 }
-
 void processAndDisplaySortedData(const std::string& client_id_str, const std::string& json_data_string) {
     std::cout << "\n[" << client_id_str << "] Memproses data yang diterima untuk diurutkan..." << std::endl;
     if (json_data_string.empty() || json_data_string == "[]" || json_data_string == "No data found" || json_data_string == "Error: Could not retrieve data") {
@@ -336,7 +338,6 @@ int main(int argc, char *argv[]) {
         }
     }
     std::cout << "--- [" << client_id << "] Selesai sesi permintaan data dan sorting ---" << std::endl;
-
 
 #ifdef _WIN32
     WSACleanup();

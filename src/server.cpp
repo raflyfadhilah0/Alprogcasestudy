@@ -84,6 +84,7 @@ void sortSensorData(std::vector<SensorData>& data_vec, SortField field, SortOrde
 // --- AKHIR FUNGSI DAN ENUM SORTING ---
 
 
+
 // --- DEFINISI VARIABEL GLOBAL YANG DEKLARASIKAN DI common.h ---
 // Ini adalah definisi untuk global_thresholds yang dideklarasikan sebagai 'extern' di common.h
 AnomalyThresholds global_thresholds = {
@@ -91,6 +92,7 @@ AnomalyThresholds global_thresholds = {
     .humidity_min = 40.0, .humidity_max = 60.0,
     .light_min = 300.0, .light_max = 800.0
 }; //
+
 // --- AKHIR DEFINISI GLOBAL ---
 
 
@@ -160,7 +162,6 @@ void handle_client_connection(socket_t client_socket, std::string client_ip) {
                     std::cout << "[PERINGATAN CEPAT] " << desc << " - Dari: " << client_ip << std::endl;
                 }
             }
-
             data_handler.addSensorData(data); // addSensorData dari DataHandler
 
             // Kirim balasan (opsional)
@@ -291,6 +292,7 @@ int main() {
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(SERVER_PORT); // SERVER_PORT dari common.h
     if (inet_pton(AF_INET, SERVER_HOST.c_str(), &server_addr.sin_addr) <= 0) { // SERVER_HOST dari common.h
+
         std::cerr << "inet_pton error untuk " << SERVER_HOST << std::endl;
         CLOSE_SOCKET(listen_socket);
         #ifdef _WIN32
@@ -313,6 +315,7 @@ int main() {
     }
 
     if (listen(listen_socket, SOMAXCONN) == SOCKET_ERROR) {
+
         #ifdef _WIN32
             std::cerr << "Listen gagal: " << WSAGetLastError() << std::endl;
         #else
@@ -379,6 +382,7 @@ int main() {
             #ifdef _WIN32
                 std::cerr << "[SERVER] Accept gagal: " << WSAGetLastError() << std::endl;
             #else
+
                 perror("[SERVER] Accept gagal");
             #endif
             continue;
@@ -390,6 +394,7 @@ int main() {
     }
 
     std::cout << "[SERVER] Menunggu client threads selesai..." << std::endl;
+
     for (std::thread& t : client_threads) {
         if (t.joinable()) {
             t.join();
